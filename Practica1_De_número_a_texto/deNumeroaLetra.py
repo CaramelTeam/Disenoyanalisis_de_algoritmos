@@ -1,3 +1,6 @@
+#Juan Carlos Nicolas Avila Padilla
+#me rife pero casi sale
+
 import sys
 
 unidad = {0:"", 1:"uno",2:"dos",3:"tres",4:"cuatro",5:"cinco",6:"seis",7:"siete",8:"ocho",9:"nueve"}
@@ -14,7 +17,7 @@ def a_numero(entrada):
         numero = int(x) #conversion de la entrada de usuario (string) a entero
         acomodo.append(numero) #funcion para agregar valores al array
         largo = len(acomodo)  #tamaño total del arreglo
-
+#--------------------------------------------------------------
     if largo == 9:
         if acomodo[2] == 0:
             if acomodo[5] != 0:
@@ -45,7 +48,7 @@ def a_numero(entrada):
         if acomodo[1] == 2:
             if acomodo[0] == 0:
                 res_mil = (cen[0] + especiales[6] + valor[1] + cen[acomodo[3]] + dec[acomodo[4]] + unidad[acomodo[5]])
-        
+ #----------------------------------------------------       
     if largo == 8:
         if acomodo[1] == 0:
             res_mil = (dec[acomodo[0]] + valor[1] + cen[acomodo[2]] + dec[acomodo[3]] + unidad[acomodo[4]])
@@ -79,10 +82,11 @@ def a_numero(entrada):
         if acomodo[5] == 0:
             res_mil = (dec[acomodo[0]] + unidad[acomodo[1]] + valor[1] + cen[acomodo[2]] + dec[acomodo[3]] + unidad[acomodo[4]])
             return res_mil
+#-----------------------------
     if largo == 7:
         res_mil = (unidad[acomodo[0]] + valor[1] + cen[acomodo[1]] + dec[acomodo[2]] + unidad[acomodo[3]])
         return res_mil
-#-------------
+#----------------------------
     if largo == 6:
         if acomodo[2] == 0:
             if acomodo[5] != 0:
